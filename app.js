@@ -8,7 +8,7 @@ const customerRouter = require("./routes/customerRouter")
 /*handle the request*/
 //the main page
 app.get('/', (req, res) => {
-    res.send('<h1>Taco Cola</h1>')
+    res.send('<h1>Taco Cola A</h1>')
 })
 
 //handle the customers
