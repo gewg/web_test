@@ -8,7 +8,7 @@ const customerRouter = require("./routes/customerRouter")
 /*handle the request*/
 //the main page
 app.get('/', (req, res) => {
-    res.send('<h1>Taco Cola Ven System</h1>')
+    res.send('<h1>Taco Cola</h1>')
 })
 
 //handle the customers
@@ -16,8 +16,6 @@ app.get('/', (req, res) => {
 app.use("/customer-coffee", customerRouter.customerCoffeeRouter)
 //send the customer snack
 app.use("/customer-snack", customerRouter.customerSnackRouter)
-
-
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('Tacocola Backend Is Running')
